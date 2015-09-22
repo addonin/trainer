@@ -67,11 +67,13 @@
 				<finalName>trainer</finalName>
 				<plugins>
 					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-war-plugin</artifactId>
 						<version>2.1.1</version>
 						<configuration>
 							<outputDirectory>webapps</outputDirectory>
 							<warName>ROOT</warName>
+							<webXml>src/main/web/WEB-INF/web.xml</webXml>
 						</configuration>
 					</plugin>
 				</plugins>
